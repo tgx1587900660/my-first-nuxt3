@@ -22,3 +22,12 @@ useSeoMeta({
   keywords: 'B站,bilibili,哔哩哔哩,哔哩哔哩动画,动漫,电影,在线动漫,高清电影'
 })
 </script>
+
+<style lang="scss">
+/* vant-ui 主题定制 */
+:root {
+  --van-primary-color: #fb7299 !important;
+  --van-back-top-background: #fbfbfb !important;
+  --van-back-top-text-color: #666 !important;
+}
+</style>

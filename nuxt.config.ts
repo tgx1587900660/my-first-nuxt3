@@ -3,6 +3,8 @@ export default defineNuxtConfig({
   // 是否开启 ssr, 默认开启
   // ssr: false,
   devtools: { enabled: true },
+  // 应用模块
+  modules: ['@vant/nuxt'],
   vite: {
     css: {
       preprocessorOptions: {
