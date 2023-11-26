@@ -56,3 +56,11 @@ inde.vue中 性能优化， 初次渲染 20 条，后续滚动添加
 
 打包 npm run build
 打包路径中不能有 中文(否则可能失败)
+
+npm run preview 访问 http://localhost:3000/ 在线地址
+
+如果没有代码提示， npm run postinstall 可下载类型
+
+npm run generate 可以直接生成静态文件，不开启服务器（ 适用于 博客类 项目 ）
+
+app.vue 的 useSeoMeta 中 添加 referrer: 'no-referrer' 绕开 B站 防盗链 加载图片
