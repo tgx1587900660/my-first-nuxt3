@@ -22,11 +22,11 @@ npm i @vant/nuxt，
 在app.vue 根组件，修改按钮主题色，在全局改css变量，用:root包起来，
 也可以引入额外样式
 
-在app.vue 根组件中，使用 nuxt3 自带 seo 函数 useSeoMeta
+在app.vue 根组件中 使用nuxt3自带函数 useSeoMeta
 
 inde.vue中写网页结构，引入图片用路径 '@/assets/.....'
 
-inde.vue中 使用 useFetch 请求 server/api 里面的接口
+inde.vue中 使用nuxt3自带函数 useFetch 请求 server/api 里面的接口
 
 inde.vue中 获取 channel 列表
 
@@ -35,3 +35,21 @@ inde.vue中 获取 video 列表
 inde.vue中 性能优化， 初次渲染 20 条，后续滚动添加
 
 使用 vscode 插件 json2ts 来生成 interface VideoItem
+
+在video中创建 [id].vue 文件，用于匹配 inde.vue中的 `/video/${item.bvid}` 路径
+
+[id].vue 中 使用nuxt3自带函数 useRoute 获取 动态参数 ${item.bvid}
+
+[id].vue 中 模板中 用 $route.params.id 获取 动态参数 ${item.bvid}
+
+抽离 AppHeader.vue 和 AppVideo.vue 公共组件， 知道 defineProps 的泛型写法
+
+在server/api/video中编写 [id].get.ts 接口
+
+在 pages/video/[id].vue 中 用 useFetch(`/api/video/${params.id}`) 调用 [id].get.ts 接口，
+并用 useSeoMeta 动态设置标题，
+获取推荐视频列表，并渲染，
+使用弹幕组件 van-barrage，
+使用粘性布局 van-sticky
+
+在app.vue 根组件中 使用 keepalive 最大缓存 10 个页面

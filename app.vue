@@ -9,7 +9,8 @@
   <!-- <NuxtLink to="/video">视频页</NuxtLink> -->
 
   <!-- NuxtPage 相当于 RouterView 默认会去 pages/index 里面找到index.vue 作为首页 -->
-  <NuxtPage></NuxtPage>
+  <!-- keepalive 最大缓存10个页面 -->
+  <NuxtPage :keepalive="{ max: 10 }"></NuxtPage>
 </template>
 
 <script setup lang="ts">
