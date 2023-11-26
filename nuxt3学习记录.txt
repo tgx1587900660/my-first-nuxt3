@@ -64,3 +64,7 @@ npm run preview 访问 http://localhost:3000/ 在线地址
 npm run generate 可以直接生成静态文件，不开启服务器（ 适用于 博客类 项目 ）
 
 app.vue 的 useSeoMeta 中 添加 referrer: 'no-referrer' 绕开 B站 防盗链 加载图片
+
+利用 vercel https://vercel.com/ 免费部署 网站，
+在 GitHub 新建仓库， 并推送代码
+GitHub 授权 vercel 登录， 然后操作
