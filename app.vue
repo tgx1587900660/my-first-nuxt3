@@ -1,13 +1,14 @@
 <template>
-  <!-- nuxt 有基于文件的路由系统 -->
+  <!-- nuxt 有基于文件的路由系统, 无需导入组件，只要按照nuxt规定的目录结构写代码，就可以使用vue组件-->
 
   <!-- NuxtLink 相当于 RouterLink -->
-  <!-- 首页 index/index.vue -->
-  <NuxtLink to="/">首页</NuxtLink>
-  <!-- 视频页 video/index.vue -->
-  <NuxtLink to="/video">视频页</NuxtLink>
 
-  <!-- NuxtPage 相当于 RouterView -->
+  <!-- 首页 index/index.vue -->
+  <!-- <NuxtLink to="/">首页</NuxtLink> -->
+  <!-- 视频页 video/index.vue -->
+  <!-- <NuxtLink to="/video">视频页</NuxtLink> -->
+
+  <!-- NuxtPage 相当于 RouterView 默认会去 pages/index 里面找到index.vue 作为首页 -->
   <NuxtPage></NuxtPage>
 </template>
 
@@ -26,7 +27,9 @@ useSeoMeta({
 <style lang="scss">
 /* vant-ui 主题定制 */
 :root {
+  // 测试一下 van-button 主要按钮有没有变成 #fb7299
   --van-primary-color: #fb7299 !important;
+
   --van-back-top-background: #fbfbfb !important;
   --van-back-top-text-color: #666 !important;
 }

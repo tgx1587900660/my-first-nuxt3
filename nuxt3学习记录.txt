@@ -1,0 +1,37 @@
+node版本16.16.0   npm 版本 8.11.0
+
+创建项目: npx nuxi@latest init my-first-nuxt3
+
+安装依赖 npm i
+
+启动项目 npm run dev 会生成 .nuxt 文件，是一些运行中文件
+
+public 是公共文件
+
+server 可以写接口
+
+app.vue 是根组件
+
+要使用 vant 分2步，
+npm i @vant/nuxt，
+在nuxt.config.ts中配置 modules: ['@vant/nuxt'] 即可，
+此时，在nuxt的调试工具中，可看到modules，并且无需导入注册，
+可在所有组件中使用，例如，在首页index.vue使用，
+<van-button type="primary">主要按钮</van-button>
+
+在app.vue 根组件，修改按钮主题色，在全局改css变量，用:root包起来，
+也可以引入额外样式
+
+在app.vue 根组件中，使用 nuxt3 自带 seo 函数 useSeoMeta
+
+inde.vue中写网页结构，引入图片用路径 '@/assets/.....'
+
+inde.vue中 使用 useFetch 请求 server/api 里面的接口
+
+inde.vue中 获取 channel 列表
+
+inde.vue中 获取 video 列表
+
+inde.vue中 性能优化， 初次渲染 20 条，后续滚动添加
+
+使用 vscode 插件 json2ts 来生成 interface VideoItem
