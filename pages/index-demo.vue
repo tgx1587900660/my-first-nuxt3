@@ -7,7 +7,6 @@
           <li><NuxtLink to="/dashboard">dashboard</NuxtLink></li>
           <li><NuxtLink to="/posts/1">文章1</NuxtLink></li>
           <li><NuxtLink to="/posts/2">文章2</NuxtLink></li>
-          
         </ul>
       </nav>
     </header>
@@ -30,6 +29,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 const color = ref('red')
 
 function onToggleColor() {

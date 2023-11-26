@@ -53,3 +53,6 @@ inde.vue中 性能优化， 初次渲染 20 条，后续滚动添加
 使用粘性布局 van-sticky
 
 在app.vue 根组件中 使用 keepalive 最大缓存 10 个页面
+
+打包 npm run build
+打包路径中不能有 中文(否则可能失败)
