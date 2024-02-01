@@ -32,7 +32,6 @@ useSeoMeta({
 :root {
   // 测试一下 van-button 主要按钮有没有变成 #fb7299
   --van-primary-color: #fb7299 !important;
-
   --van-back-top-background: #fbfbfb !important;
   --van-back-top-text-color: #666 !important;
 }

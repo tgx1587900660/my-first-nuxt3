@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "my-first-nuxt3",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,6 +17,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
     "@vant/nuxt": "^1.0.4"
   }
 }
