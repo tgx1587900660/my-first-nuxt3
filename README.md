@@ -12,3 +12,9 @@ npm run preview: 预览项目
 npm run postinstall: 如果没有代码提示,可运行,会自动下载类型
 
 ```
+
+# 问题
+
+#### 自动注册的函数有红色报错
+
+尝试 npm run postinstall 或 选中 .vue 文件后，在左下角切换 ts 版本，或者使用 takeover 模式
