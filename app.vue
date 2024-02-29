@@ -35,9 +35,4 @@ useSeoMeta({
   --van-back-top-background: #fbfbfb !important;
   --van-back-top-text-color: #666 !important;
 }
-
-// 基础样式
-@import './assets/styles/base.scss';
-// 字体图标
-@import './assets/styles/iconfont.scss';
 </style>

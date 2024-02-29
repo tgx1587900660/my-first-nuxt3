@@ -21,11 +21,13 @@ export default defineNuxtConfig({
     head: {
       link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }]
     }
+  },
+  css: ['~/assets/css/base.scss', '~/assets/css/iconfont.scss', '~/assets/css/tailwind.css'],
+  postcss: {
+    plugins: {
+      // 添加 tailwindcss 配置
+      tailwindcss: {},
+      autoprefixer: {}
+    }
   }
-  // postcss: {
-  //   plugins: {
-  //     'postcss-nested': {},
-  //     'postcss-custom-media': {}
-  //   }
-  // }
 })

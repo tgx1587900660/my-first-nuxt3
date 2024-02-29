@@ -1,7 +1,5 @@
 <!-- 首页 -->
 <template>
-  <AppMenu />
-
   <!-- 公共头部 -->
   <AppHeader></AppHeader>
 
