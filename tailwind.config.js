@@ -6,11 +6,11 @@ export default {
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './app.vue',
-    './error.vue'
+    './error.vue',
     // etc.
   ],
   theme: {
-    extend: {}
+    extend: {},
   },
-  plugins: []
+  plugins: ['prettier-plugin-tailwindcss'],
 }

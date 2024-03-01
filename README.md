@@ -18,3 +18,15 @@ npm run postinstall: 如果没有代码提示,可运行,会自动下载类型
 #### 自动注册的函数有红色报错
 
 尝试 npm run postinstall 或 选中 .vue 文件后，在左下角切换 ts 版本，或者使用 takeover 模式
+
+# 日志
+
+#### feat: 实现 tailwindcss 类名自动排序
+
+```xml
+1. pnpm install -D prettier prettier-plugin-tailwindcss
+2. 配置 prettier.config.js 的 plugins
+3. 配置 .prettierrc 的 plugins  (2/3选一个即可)
+4. 配置 tailwind.config.js 的 plugins (配不配貌似都行)
+
+```

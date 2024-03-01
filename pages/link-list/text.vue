@@ -1,5 +1,5 @@
 <template>
-  <div class="group-hover:bg-sky-500 w-[100px] h-[50px]">text 123</div>
+  <div class="h-[50px] w-[100px] group-hover:bg-sky-500">text 123</div>
   <div>text2</div>
 </template>
 
