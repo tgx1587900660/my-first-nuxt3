@@ -13,4 +13,5 @@ export default {
     extend: {},
   },
   plugins: ['prettier-plugin-tailwindcss'],
+  darkMode: 'selector',
 }
