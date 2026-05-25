@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import type { BarrageInstance } from 'vant'
+import type { BarrageInstance } from 'vant';
 
 // 弹幕相关
 const barrageList = ref([
@@ -44,30 +44,30 @@ const barrageList = ref([
   { id: 103, text: 'Vue' },
   { id: 104, text: '组件库' },
   { id: 105, text: 'VantUI' },
-  { id: 106, text: '666' }
-])
+  { id: 106, text: '666' },
+]);
 
-const barrageRef = ref<BarrageInstance>()
+const barrageRef = ref<BarrageInstance>();
 
 const onPlay = () => {
-  barrageRef.value?.play()
-}
+  barrageRef.value?.play();
+};
 
 const onPause = () => {
-  barrageRef.value?.pause()
-}
+  barrageRef.value?.pause();
+};
 
 // 通过路由参数获取视频id
-const { params } = useRoute()
-const { data: detail } = await useFetch(`/api/video/${params.id}`)
+const { params } = useRoute();
+const { data: detail } = await useFetch(`/api/video/${params.id}`);
 
 // 获取视频列表数据
-const { data: videoList } = await useFetch('/api/video')
+const { data: videoList } = await useFetch('/api/video');
 
 // 动态设置标题
 useSeoMeta({
-  title: `${detail.value?.title}_哔哩哔哩bilibili_${detail.value?.author.name}`
-})
+  title: `${detail.value?.title}_哔哩哔哩bilibili_${detail.value?.author.name}`,
+});
 </script>
 
 <style lang="scss" scoped>

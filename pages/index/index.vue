@@ -14,6 +14,8 @@
       <AppVideo v-for="item in displayList" :key="item.aid" :item="item"></AppVideo>
     </div>
   </van-list>
+
+  <AppFooter />
 </template>
 
 <script setup lang="ts">

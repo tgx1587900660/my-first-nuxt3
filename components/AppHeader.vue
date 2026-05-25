@@ -1,7 +1,7 @@
 <template>
   <!-- 公共头部 -->
   <header class="app-header">
-    <NuxtLink class="logo" to="/">
+    <NuxtLink class="logo" to="/link-list">
       <i class="iconfont Navbar_logo"></i>
     </NuxtLink>
     <a class="search" href="#">

@@ -1,0 +1,16 @@
+# Mac OS
+.DS_Store
+
+/build
+/dist
+/mock
+/.nuxt
+/.output
+.vscode/
+/static
+
+pnpm-lock.yaml
+
+package-lock.json
+yarn-error.log
+yarn.lock
